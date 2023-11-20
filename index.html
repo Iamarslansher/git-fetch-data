@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching Data</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="usreField">
+            <input type="text" id="inputField">
+            <button onclick="userInputText()" class="searchBtn btn">Search Account</button>
+        </div>
+
+
+
+        <div class="userData">
+
+            <img src="./assets/images/img-place.jpeg" id="userAvatar">
+
+            <h1 class="userData-api" id="userGitName">NAME</h1>
+            <p id="userLocation" class="userData-api">No Data</p>
+            <p class="userData-api" id="userBio">No Data</p>
+            <span class="userData-Ui">Followers :</span>
+            <span id="userFollowers" class="userData-api">00</span>
+            <br>
+            <span class="userData-Ui">Following :</span>
+            <span id="userFollowing" class="userData-api">00</span>
+            <br>
+            <span class="userData-Ui">Repos :</span>
+            <span id="userRepos" class="userData-api">00</span>
+            <br>
+            <a href="#" target="_blank" class="gitLink" id="userGitLink"><img src="./assets/images/githubIcon.png"
+                    class="githubIcon"></a>
+
+
+        </div>
+
+    </div>
+
+    <script src=" app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

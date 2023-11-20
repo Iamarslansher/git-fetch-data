@@ -1,0 +1,142 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background-image: url("./assets/images/api.png");
+  background-size: cover;
+  background-position: center;
+  /* background: linear-gradient(70deg, brown, black); */
+}
+
+#inputField {
+  width: 170px;
+  height: 27px;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+#inputField:hover {
+  box-shadow: 0 0 10px yellow;
+}
+
+#inputField:focus {
+  border: 2px solid aqua;
+}
+
+.searchBtn {
+  width: 120px;
+  height: 27px;
+  background: linear-gradient(45deg, brown, black);
+  color: yellow;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.githubIcon {
+  width: 70px;
+  height: 60px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userData {
+  width: 30%;
+  height: auto;
+  border: 2px solid aqua;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  line-height: 30px;
+  flex-wrap: wrap;
+}
+
+.userData-Ui {
+  font-size: 20px;
+  color: yellow;
+}
+
+.userData-api {
+  font-size: 20px;
+  color: white;
+}
+
+.userData:hover {
+  box-shadow: 0 0 5px white;
+}
+
+#userAvatar {
+  border-radius: 50%;
+  width: 150px;
+  border: 3px solid aqua;
+}
+
+#userGitLink {
+  text-decoration: none;
+  color: ghostwhite;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .usreField {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn {
+    border-radius: 20px;
+    width: 120px;
+    height: 27px;
+    background: linear-gradient(45deg, gold, yellow);
+    color: green;
+  }
+
+  #inputField {
+    width: 130px;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .userData {
+    width: 90%;
+    height: auto;
+    border: 2px solid rgb(32, 51, 51);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(245, 236, 238);
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 20px;
+    flex-wrap: wrap;
+  }
+
+  #userAvatar {
+    border-radius: 50%;
+    width: 170px;
+  }
+}
